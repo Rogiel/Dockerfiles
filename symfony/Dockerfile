@@ -62,6 +62,7 @@ RUN npm run-script build \
 # Copy entire application, generate composer autoload and warmup the cache.
 COPY --chown=www-data:www-data bin /var/www/bin
 COPY --chown=www-data:www-data config /var/www/config
+COPY --chown=www-data:www-data data /var/www/data
 COPY --chown=www-data:www-data src /var/www/src
 COPY --chown=www-data:www-data templates /var/www/templates
 COPY --chown=www-data:www-data translations /var/www/translations
