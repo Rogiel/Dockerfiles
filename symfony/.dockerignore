@@ -6,28 +6,12 @@ Dockerfile
 deploy.sh
 docker-compose.yml
 
-src/Rogiel
-
 /vendor
 /var/cache
-/var/logs
+/var/log
 /var/sessions
-/var/bootstrap.php.cache
-
-/web/assetic
-/web/bundles
-/web/css
-/web/fonts
-/web/js
-/web/images
-/components
 
 /public/build
 /node_modules
-
-!/web/uploads
-/web/uploads/*
-!/web/uploads/.gitkeep
-/web/google*.html
 
 /composer.phar
