@@ -2,7 +2,6 @@ FROM ubuntu:cosmic
 RUN apt-get update && apt-get install -y \
     curl \
     git \
-    cmake \
     clang \
     libc++-dev \
     libc++abi-dev \
@@ -10,4 +9,6 @@ RUN apt-get update && apt-get install -y \
     gdb \
     ninja-build \
     ccache
-
+RUN curl https://github.com/Kitware/CMake/releases/download/v3.14.1/cmake-3.14.1-Linux-x86_64.sh -L > cmake.sh && \
+	sh ./cmake.sh --skip-license --prefix=/usr/local && \
+	rm cmake.sh
