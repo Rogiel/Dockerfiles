@@ -1,5 +1,5 @@
 FROM rogiel/cpp-build:latest
-RUN apt-get update && apt-get install -y \
+RUN env DEBIAN_FRONTEND=noninteractive apt-get update && env DEBIAN_FRONTEND=noninteractive apt-get install -y \
     xorg-dev \
     libgl-dev \
     libopenal-dev \
